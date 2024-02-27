@@ -1,7 +1,10 @@
 package com.example.startedproject
 
-interface Platform {
-    val name: String
-}
+expect class Platform {
+    val oSName: String
+    val oSVersion: String
+    val deviceModel: String
+    val density: Int
 
-expect fun getPlatform(): Platform
+    fun logSystemInfo()
+}
