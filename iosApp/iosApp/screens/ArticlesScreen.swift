@@ -15,7 +15,6 @@ extension ArticlesScreen {
     class ArticlesViewModelWrapper: ObservableObject {
         let articlesViewModel: ArticlesViewModel
         
-        
         init() {
             articlesViewModel = ArticlesViewModel()
             articlesState = articlesViewModel.articlesState.value
