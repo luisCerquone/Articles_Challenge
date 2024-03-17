@@ -13,6 +13,7 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		AF0BA50F2B8E6E2800572692 /* AboutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BA50E2B8E6E2800572692 /* AboutListView.swift */; };
 		AF0BA5112B8E6E7100572692 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BA5102B8E6E7100572692 /* AboutScreen.swift */; };
+		AF2C8DEC2BA7401700A4F9DC /* ArticlesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C8DEB2BA7401700A4F9DC /* ArticlesScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0BA50E2B8E6E2800572692 /* AboutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutListView.swift; sourceTree = "<group>"; };
 		AF0BA5102B8E6E7100572692 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		AF2C8DEB2BA7401700A4F9DC /* ArticlesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				AF0BA50E2B8E6E2800572692 /* AboutListView.swift */,
-				AF0BA5102B8E6E7100572692 /* AboutScreen.swift */,
+				AF2C8DEA2BA73FC400A4F9DC /* screens */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
@@ -94,6 +95,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF2C8DEA2BA73FC400A4F9DC /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				AF0BA50E2B8E6E2800572692 /* AboutListView.swift */,
+				AF0BA5102B8E6E7100572692 /* AboutScreen.swift */,
+				AF2C8DEB2BA7401700A4F9DC /* ArticlesScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2C8DEC2BA7401700A4F9DC /* ArticlesScreen.swift in Sources */,
 				AF0BA50F2B8E6E2800572692 /* AboutListView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,

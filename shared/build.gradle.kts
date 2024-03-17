@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.skie)
 }
 
 kotlin {
@@ -30,7 +31,6 @@ kotlin {
 
         androidMain.dependencies {
             implementation(libs.androidx.lifecycle.viewmodel.ktx)
-            implementation(libs.lifecycle.viewmodel.ktx)
         }
 
 
