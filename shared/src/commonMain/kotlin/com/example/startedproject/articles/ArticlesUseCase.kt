@@ -12,6 +12,8 @@ class ArticlesUseCase(private val service: ArticlesService) {
 
     companion object {
         const val DEFAULT_DESCRIPTION = "Click to find out more"
+        const val DEFAULT_CONTENT = "Click to find out more content"
+        const val DEFAULT_AUTHOR = "Unknown"
         const val DEFAULT_IMAGE_URL =
             "https://image.cnbcfm.com/api/v1/image/107326078-1698758530118-gettyimages-1765623456-wall26362_igj6ehhp.jpeg?v=1698758587&w=1920&h=1080"
     }
@@ -25,6 +27,8 @@ class ArticlesUseCase(private val service: ArticlesService) {
         Article(
             raw.title,
             raw.desc ?: DEFAULT_DESCRIPTION,
+            raw.author ?: DEFAULT_AUTHOR,
+            raw.content ?: DEFAULT_CONTENT,
             getDaysAgoString(raw.date),
             raw.imageUrl ?: DEFAULT_IMAGE_URL
         )
