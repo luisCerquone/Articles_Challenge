@@ -24,6 +24,15 @@ https://assets.toptal.io/images?url=https%3A%2F%2Fuploads.toptal.io%2Fblog%2Fima
 - KTOR: This library is responsible for calls to APIs. https://ktor.io/
 - KOIN: It takes care of dependency injections throughout the project. https://insert-koin.io/
 - COIL: Handles the download of images asynchronously. https://github.com/coil-kt/coil
-- SQLDELIGHT: Handles SQL calls or requests made to the internal database of the app or device. https://github.com/cashapp/sqldelight
+- SQLDELIGHT: Handles SQL calls or requests made to the internal database of the app or
+  device. https://github.com/cashapp/sqldelight
 
 ## Why Kotlin multiplatform?
+
+Kotlin multiplatform is backward compatible with old android versions or legacy projects, you can
+run a project that is already made in compose or xml and migrate it little by little to kmp.
+
+One of the bets is that the business logic and presentation will be shared with a single language,
+for the different business areas.
+
+With which you only have to develop the views natively, Compose for Android and SwiftUI for iOS.

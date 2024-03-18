@@ -3,6 +3,8 @@ agp = "8.2.1"
 coilCompose = "2.6.0"
 kotlin = "1.9.20"
 compose = "1.5.4"
+mapsCompose = "2.11.4"
+playServicesMaps = "18.2.0"
 skieVersion = "0.6.2"
 compose-compiler = "1.5.4"
 compose-material3 = "1.1.2"
@@ -42,6 +44,8 @@ koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", versi
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 
+maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 sql-coroutines-extensions = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
 sql-native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
 sql-android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }

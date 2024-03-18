@@ -13,7 +13,7 @@ import com.example.startedproject.android.screens.AboutScreen
 import com.example.startedproject.android.screens.ArticleScreen
 import com.example.startedproject.android.screens.ArticlesScreen
 import com.example.startedproject.android.screens.Screens
-import com.example.startedproject.android.screens.UserScreen
+import com.example.startedproject.android.screens.UsersScreen
 import com.example.startedproject.articles.presentation.ArticlesViewModel
 import com.example.startedproject.users.presentation.UserViewModel
 import org.koin.androidx.compose.getViewModel
@@ -67,7 +67,7 @@ fun AppNavHost(
         }
 
         composable(Screens.USERS.route) {
-            UserScreen(
+            UsersScreen(
                 userViewModel,
                 onUpButtonClick = { navController.popBackStack() },
                 onUser = { navController.navigate(Screens.USER.route) }

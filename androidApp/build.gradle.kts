@@ -53,5 +53,8 @@ dependencies {
 
     implementation(libs.accompanist.swiperefresh)
 
+    implementation(libs.maps.compose)
+    implementation(libs.play.services.maps)
+
     debugImplementation(libs.compose.ui.tooling)
 }

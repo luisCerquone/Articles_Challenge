@@ -23,7 +23,7 @@ import com.example.startedproject.users.domain.User
 import com.example.startedproject.users.presentation.UserViewModel
 
 @Composable
-fun UserScreen(
+fun UsersScreen(
     userViewModel: UserViewModel,
     onUpButtonClick: () -> Unit,
     onUser: () -> Unit,
