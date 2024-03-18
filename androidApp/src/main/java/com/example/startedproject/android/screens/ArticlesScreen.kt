@@ -11,7 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.AccountCircle
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -37,7 +37,7 @@ import com.google.accompanist.swiperefresh.SwipeRefreshState
 fun ArticlesScreen(
     articlesViewModel: ArticlesViewModel,
     onAboutButtonClick: () -> Unit,
-    onArticle: () -> Unit,
+    onArticle: () -> Unit
 ) {
     val articlesState = articlesViewModel.articlesState.collectAsState()
 
@@ -61,7 +61,7 @@ private fun AppBar(
         actions = {
             IconButton(onClick = onAboutButtonClick) {
                 Icon(
-                    imageVector = Icons.Outlined.Info,
+                    imageVector = Icons.Outlined.AccountCircle,
                     contentDescription = "About Device Button",
                 )
             }

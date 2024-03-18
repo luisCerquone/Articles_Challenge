@@ -13,7 +13,9 @@ import com.example.startedproject.android.screens.AboutScreen
 import com.example.startedproject.android.screens.ArticleScreen
 import com.example.startedproject.android.screens.ArticlesScreen
 import com.example.startedproject.android.screens.Screens
+import com.example.startedproject.android.screens.UserScreen
 import com.example.startedproject.articles.presentation.ArticlesViewModel
+import com.example.startedproject.users.presentation.UserViewModel
 import org.koin.androidx.compose.getViewModel
 
 @Composable
@@ -36,6 +38,7 @@ fun AppNavHost(
     modifier: Modifier = Modifier
 ) {
     val articlesViewModel: ArticlesViewModel = getViewModel()
+    val userViewModel: UserViewModel = getViewModel()
 
     NavHost(
         navController = navController,
@@ -45,7 +48,7 @@ fun AppNavHost(
         composable(Screens.ARTICLES.route) {
             ArticlesScreen(
                 articlesViewModel,
-                onAboutButtonClick = { navController.navigate(Screens.ABOUT_DEVICE.route) },
+                onAboutButtonClick = { navController.navigate(Screens.USERS.route) },
                 onArticle = { navController.navigate(Screens.ARTICLE.route) }
             )
         }
@@ -61,6 +64,18 @@ fun AppNavHost(
                 articlesViewModel,
                 onUpButtonClick = { navController.popBackStack() }
             )
+        }
+
+        composable(Screens.USERS.route) {
+            UserScreen(
+                userViewModel,
+                onUpButtonClick = { navController.popBackStack() },
+                onUser = { navController.navigate(Screens.USER.route) }
+            )
+        }
+
+        composable(Screens.USER.route) {
+
         }
     }
 }
