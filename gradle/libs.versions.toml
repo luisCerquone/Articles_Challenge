@@ -13,7 +13,7 @@ androidx-lifecycleViewmodelKtx = "2.7.0"
 ktorClient = "2.3.5"
 kotlinxDatetime = "0.4.1"
 koin = "3.4.3"
-sqlDelight = "2.0.1"
+sqlDelight = "2.0.0"
 accompanistSwiperefresh = "0.32.0"
 
 [libraries]

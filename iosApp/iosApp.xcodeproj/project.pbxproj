@@ -346,8 +346,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
-					lsqlite3,
-					"-shared",
+					shared,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,8 +375,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
-					lsqlite3,
-					"-shared",
+					shared,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
