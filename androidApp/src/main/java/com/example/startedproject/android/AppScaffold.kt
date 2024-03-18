@@ -10,8 +10,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.startedproject.android.screens.AboutScreen
+import com.example.startedproject.android.screens.ArticleScreen
 import com.example.startedproject.android.screens.ArticlesScreen
 import com.example.startedproject.android.screens.Screens
+import com.example.startedproject.articles.presentation.ArticlesViewModel
+import org.koin.androidx.compose.getViewModel
 
 @Composable
 fun AppScaffold() {
@@ -32,6 +35,8 @@ fun AppNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier
 ) {
+    val articlesViewModel: ArticlesViewModel = getViewModel()
+
     NavHost(
         navController = navController,
         startDestination = Screens.ARTICLES.route,
@@ -39,12 +44,21 @@ fun AppNavHost(
     ) {
         composable(Screens.ARTICLES.route) {
             ArticlesScreen(
-                onAboutButtonClick = { navController.navigate(Screens.ABOUT_DEVICE.route) }
+                articlesViewModel,
+                onAboutButtonClick = { navController.navigate(Screens.ABOUT_DEVICE.route) },
+                onArticle = { navController.navigate(Screens.ARTICLE.route) }
             )
         }
 
         composable(Screens.ABOUT_DEVICE.route) {
             AboutScreen(
+                onUpButtonClick = { navController.popBackStack() }
+            )
+        }
+
+        composable(Screens.ARTICLE.route) {
+            ArticleScreen(
+                articlesViewModel,
                 onUpButtonClick = { navController.popBackStack() }
             )
         }
