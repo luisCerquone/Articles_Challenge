@@ -1,4 +1,4 @@
-package com.example.startedproject.articles
+package com.example.startedproject.articles.data
 
 class ArticlesRepository(
     private val dataSource: ArticlesDataSource,

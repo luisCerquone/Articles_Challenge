@@ -1,5 +1,7 @@
-package com.example.startedproject.articles
+package com.example.startedproject.articles.domain
 
+import com.example.startedproject.articles.data.ArticlesRepository
+import com.example.startedproject.articles.data.ArticleRaw
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone

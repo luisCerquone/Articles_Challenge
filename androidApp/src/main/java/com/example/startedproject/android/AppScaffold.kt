@@ -12,7 +12,6 @@ import androidx.navigation.compose.rememberNavController
 import com.example.startedproject.android.screens.AboutScreen
 import com.example.startedproject.android.screens.ArticlesScreen
 import com.example.startedproject.android.screens.Screens
-import com.example.startedproject.articles.ArticlesViewModel
 
 @Composable
 fun AppScaffold() {

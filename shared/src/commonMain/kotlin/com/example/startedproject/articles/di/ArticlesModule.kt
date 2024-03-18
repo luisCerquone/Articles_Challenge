@@ -1,10 +1,10 @@
 package com.example.startedproject.articles.di
 
-import com.example.startedproject.articles.ArticlesDataSource
-import com.example.startedproject.articles.ArticlesRepository
-import com.example.startedproject.articles.ArticlesService
-import com.example.startedproject.articles.ArticlesUseCase
-import com.example.startedproject.articles.ArticlesViewModel
+import com.example.startedproject.articles.data.ArticlesDataSource
+import com.example.startedproject.articles.data.ArticlesRepository
+import com.example.startedproject.articles.data.ArticlesService
+import com.example.startedproject.articles.domain.ArticlesUseCase
+import com.example.startedproject.articles.presentation.ArticlesViewModel
 import org.koin.dsl.module
 
 val articlesModule = module {

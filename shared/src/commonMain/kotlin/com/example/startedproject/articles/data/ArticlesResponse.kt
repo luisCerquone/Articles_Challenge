@@ -1,5 +1,6 @@
-package com.example.startedproject.articles
+package com.example.startedproject.articles.data
 
+import com.example.startedproject.articles.data.ArticleRaw
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package com.example.startedproject.articles
+package com.example.startedproject.articles.data
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

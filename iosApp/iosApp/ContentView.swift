@@ -6,8 +6,10 @@ struct ContentView: View {
     @State private var shouldOpenAbout = false
     
     var body: some View {
-        NavigationStack{
-            ArticlesScreen(viewModel: .init())
+        let articlesScreen = ArticlesScreen(viewModel: .init())
+        
+        NavigationStack {
+           articlesScreen
                 .toolbar {
                     ToolbarItem {
                         Button {
@@ -20,6 +22,8 @@ struct ContentView: View {
                         }
                     }
                 }
+        }.refreshable {
+            articlesScreen.viewModel.articlesViewModel.getArticles(forceFetch: true)
         }
     }
 }

@@ -1,6 +1,7 @@
-package com.example.startedproject.articles
+package com.example.startedproject.articles.presentation
 
 import com.example.startedproject.BaseViewModel
+import com.example.startedproject.articles.domain.ArticlesUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -18,7 +19,7 @@ class ArticlesViewModel(
         getArticles()
     }
 
-    private fun getArticles(forceFetch: Boolean = false) {
+    fun getArticles(forceFetch: Boolean = false) {
         scope.launch {
             _articlesState.emit(
                 ArticlesState(

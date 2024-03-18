@@ -1,4 +1,4 @@
-package com.example.startedproject.articles
+package com.example.startedproject.articles.data
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
