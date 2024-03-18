@@ -10,8 +10,9 @@ users in which each user is shown on the Google map.
 
 The project is made in MVVM with the following scheme:
 
-The Layers of MVVM with Clean Architecture
-The code is divided into three separate layers:
+- The Layers of MVVM with Clean Architecture.
+
+- The code is divided into three separate layers:
 
 - Presentation Layer
 - Domain Layer
@@ -26,6 +27,12 @@ https://assets.toptal.io/images?url=https%3A%2F%2Fuploads.toptal.io%2Fblog%2Fima
 - COIL: Handles the download of images asynchronously. https://github.com/coil-kt/coil
 - SQLDELIGHT: Handles SQL calls or requests made to the internal database of the app or
   device. https://github.com/cashapp/sqldelight
+
+## External APIs
+
+- https://www.jsonplaceholder.org/ was used to call the endpoint to users.
+- https://newsapi.org/ was used for the endpoint call to the news. I preferred to use this one since
+  I wanted to test some knowledge, it is only used for developer purposes.
 
 ## Why Kotlin multiplatform?
 
