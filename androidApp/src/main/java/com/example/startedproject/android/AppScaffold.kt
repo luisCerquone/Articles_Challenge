@@ -13,6 +13,7 @@ import com.example.startedproject.android.screens.AboutScreen
 import com.example.startedproject.android.screens.ArticleScreen
 import com.example.startedproject.android.screens.ArticlesScreen
 import com.example.startedproject.android.screens.Screens
+import com.example.startedproject.android.screens.UserMapsScreen
 import com.example.startedproject.android.screens.UsersScreen
 import com.example.startedproject.articles.presentation.ArticlesViewModel
 import com.example.startedproject.users.presentation.UserViewModel
@@ -75,7 +76,10 @@ fun AppNavHost(
         }
 
         composable(Screens.USER.route) {
-
+            UserMapsScreen(
+                userViewModel,
+                onUpButtonClick = { navController.popBackStack() }
+            )
         }
     }
 }

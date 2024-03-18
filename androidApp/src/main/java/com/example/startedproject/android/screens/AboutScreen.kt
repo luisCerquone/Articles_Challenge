@@ -25,27 +25,9 @@ fun AboutScreen(
     onUpButtonClick: () -> Unit
 ) {
     Column {
-        Toolbar(onUpButtonClick)
+        ToolbarComponent("About Device", onUpButtonClick)
         ContentView()
     }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun Toolbar(
-    onUpButtonClick: () -> Unit
-) {
-    TopAppBar(
-        title = { Text(text = "About Device") },
-        navigationIcon = {
-            IconButton(onClick = onUpButtonClick) {
-                Icon(
-                    imageVector = Icons.Default.ArrowBack,
-                    contentDescription = "Up Button",
-                )
-            }
-        }
-    )
 }
 
 @Composable
